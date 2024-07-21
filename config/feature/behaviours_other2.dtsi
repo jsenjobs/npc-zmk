@@ -1,0 +1,42 @@
+#include <dt-bindings/zmk/outputs.h>
+
+// td_out_bt_clear
+ZMK_BEHAVIOR(td_out_bc, tap_dance,
+    tapping-term-ms = <300>;
+    bindings = <&out OUT_TOG>, <&bt BT_CLR>;  
+)
+ZMK_BEHAVIOR(td_debug, tap_dance,
+    tapping-term-ms = <300>;
+    bindings = <&trans>, <&tog DEBUG>;  
+)
+// td_debug_run
+ZMK_BEHAVIOR(td_d_run, tap_dance,
+    tapping-term-ms = <300>;
+    bindings = <&kp LC(R)>, <&kp LC(LA(R))>;  
+)
+// td_debug_debug
+ZMK_BEHAVIOR(td_d_d, tap_dance,
+    tapping-term-ms = <300>;
+    bindings = <&kp LC(D)>, <&kp LC(LA(D))>;  
+)
+// td_debug_breakpoint
+// LG(F8) toggle breakpoint
+ZMK_BEHAVIOR(td_d_bp, tap_dance,
+    tapping-term-ms = <300>;
+    bindings = <&kp LC(F8)>, <&kp LS(LG(F8))>;  
+)
+// td_debug_bookmark
+// show bookmarks hold LG(F3)
+// toggle bookmark press F3
+// toggle bookmark mnemonic double press LA(F3)
+ZMK_BEHAVIOR(td_d_bm, tap_dance,
+    tapping-term-ms = <300>;
+    bindings = <&mt LG(F3) F3>, <&kp LA(F3)>;  
+)
+// td_debug_evaluate
+// evaluate expression LA(F8)
+// quick evaluate expression LA(LG(F8))
+ZMK_BEHAVIOR(td_d_eval, tap_dance,
+    tapping-term-ms = <300>;
+    bindings = <&kp LA(F8)>, <&kp LA(LG(F8))>;  
+)
