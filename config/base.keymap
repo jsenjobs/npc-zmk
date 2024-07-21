@@ -9,7 +9,7 @@
 #define Hyper(X)  &kp LS(LC(LA(LG(X))))
 #define HyperPB &kp LS(LC(LA(LG(PAUSE_BREAK))))
 #define EXT_EP_TOG &ext_power EP_TOG
-#define trans1 &trans
+#define trans &trans
 #define trans2 &trans &trans
 #define trans3 &trans &trans &trans
 #define trans6 &trans &trans &trans &trans &trans &trans
@@ -93,9 +93,9 @@ ZMK_LAYER(base_dvorak,
 
 ZMK_LAYER(num_nav,
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮           ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp CAPS      &kp N1        &kp N2        &kp N3        &kp N4        &kp N5                    &kp N6        &kp N7        &kp N8        &kp N9        &kp N0        trans1
+     &kp CAPS      &kp N1        &kp N2        &kp N3        &kp N4        &kp N5                    &kp N6        &kp N7        &kp N8        &kp N9        &kp N0        trans
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤           ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     trans3                                    &td_debug     &kp RC(SPACE) trans1                    &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     trans2         
+     trans3                                    &td_debug     &kp RC(SPACE) trans                    &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     trans2         
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤           ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      trans6                                                                                          trans6
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤           ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
@@ -104,7 +104,7 @@ ZMK_LAYER(num_nav,
 )
 
 
-ZMK_LAYER(symbol_layer,
+ZMK_LAYER(symbol,
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮           ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      trans         &kp EXCL      &kp AT        &kp POUND     &kp DLLR      &kp PRCNT                 &kp CARET     &kp AMPS      &kp STAR      &kp LPAR      &kp RPAR      &kp ESC
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤           ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
