@@ -9,11 +9,11 @@
 #define Hyper(X)  &kp LS(LC(LA(LG(X))))
 #define HyperPB &kp LS(LC(LA(LG(PAUSE_BREAK))))
 #define EXT_EP_TOG &ext_power EP_TOG
-#define trans &trans
+#define trans1 &trans
 #define trans2 &trans &trans
 #define trans3 &trans &trans &trans
 #define trans6 &trans &trans &trans &trans &trans &trans
-#define none &none
+#define none1 &none
 #define none2 &none &none
 #define none3 &none &none &none
 #define none4 &none &none &none &none
